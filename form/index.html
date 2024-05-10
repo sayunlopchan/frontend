@@ -10,10 +10,63 @@
 
   <body>
     <div class="container">
+
+      <h1>Registration Form</h1>
+      <p>Please fullfill the registration from given below. </p>
+
       <form action="">
-        <label for="name">name
-        </label>
-        <input id="name" type="text" placeholder="name">
+        <div class="form-container">
+
+          <div class="name-container">
+            <label for="name">Name</label>
+            <div class="name-wrapper">
+              <input class="input" id="name" type="text" placeholder="Name" required>
+              <input class="input" id="name" type="text" placeholder="Last" required>
+            </div>
+          </div>
+
+          <div class="email-container">
+            <label for="email">Email</label>
+            <div class="email-wrapper">
+              <input id="email" class="input" type="email" placeholder="Email" required>
+            </div>
+          </div>
+
+          <div class="num-container">
+            <label for="phone">Phone</label>
+            <div class="num-wrapper">
+              <input id="phone" type="tel" name="phone" placeholder="xxx-xx-xxx" required>
+            </div>
+          </div>
+
+          <div class="gender-container">
+            <label for="male">male</label>
+            <input id="male" name="gender" type="radio" required>
+
+            <label for="female">female</label>
+            <input class="input" id="female" name="gender" type="radio" required>
+          </div>
+
+          <div class="lang-container">
+            <label for="language">language: </label>
+
+            <select id="language" required>
+              <option value="select" selected disabled>select</option>
+              <option value="nepali">Nepali</option>
+              <option value="english">English</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="file-container">
+            <label for="file">Photo:</label>
+            <input type="file" required>
+          </div>
+
+        </div>
+        <div class="btn">
+          <button id="submit">submit</button>
+        </div>
       </form>
     </div>
   </body>
